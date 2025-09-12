@@ -1,0 +1,410 @@
+---
+title: "Criminology@Manchester Seminar Series Programmes"
+subtitle: >
+  The Department of Criminology at the University of Manchester organises two seminar
+  series each year. The Criminology Café Seminar Series provides a space for our staff,
+  including PhD students, to present their research and receive constructive feedback,
+  while the External Seminar Series invites researchers from outside the Department to
+  share their work with our community.
+format:
+  html:
+    theme:
+      light: cosmo
+    toc: false
+    number-sections: false
+    smooth-scroll: true
+    embed-resources: true   # single-file HTML for easy sharing
+page-layout: full
+---
+
+```{=html}
+<style>
+:root {
+  --accent: #6f42c1;
+  --muted: #6c757d;
+  --card-border: #e9ecef;
+}
+.body h1.title {
+  margin-bottom: .25rem;
+}
+.subtitle {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.filter-toolbar {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0 1.25rem;
+}
+.filter-toolbar .btn-filter {
+  border: 1px solid var(--card-border);
+  background: white;
+  padding: .5rem .9rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: box-shadow .15s ease, transform .02s ease;
+  user-select: none;
+}
+.filter-toolbar .btn-filter[aria-pressed="true"] {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 .2rem rgba(55,66,250,.15);
+}
+.filter-toolbar .btn-filter:hover {
+  transform: translateY(-1px);
+}
+
+.filter-toolbar .spacer { flex: 1; }
+.filter-toolbar .btn-action {
+  border: 1px solid var(--card-border);
+  background: #f8f9fa;
+  padding: .5rem .9rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.series-section {
+  margin-top: 1.2rem;
+}
+
+.series-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: .2px;
+  margin: .4rem 0 1rem;
+}
+
+.prog-card {
+  border: 1px solid var(--card-border);
+  border-left: .35rem solid var(--accent);
+  border-radius: .6rem;
+  padding: .85rem 1rem;
+  margin-bottom: .8rem;
+  background: white;
+}
+
+.prog-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: .25rem;
+}
+.prog-date { font-weight: 700; }
+.prog-time { color: var(--muted); }
+
+.prog-submeta {
+  color: var(--muted);
+  font-size: .95rem;
+  margin-bottom: .4rem;
+}
+.prog-submeta strong { color: #212529; font-weight: 600; }
+
+.prog-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.prog-list li { margin: .15rem 0; }
+
+.badge {
+  display: inline-block;
+  font-size: .75rem;
+  padding: .2rem .5rem;
+  border-radius: .45rem;
+  color: white;
+  background: var(--accent);
+  vertical-align: middle;
+}
+
+@media (min-width: 900px) {
+  .grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.25rem;
+    align-items: start;
+  }
+}
+
+@media print {
+  .filter-toolbar { display: none !important; }
+  .series-section { display: block !important; }
+  .series-section[data-series="cafe"],
+  .series-section[data-series="external"] { break-inside: avoid; }
+  .prog-card { break-inside: avoid; }
+}
+
+.footer-note {
+  margin-top: 2rem;
+  padding-top: .75rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--muted);
+  font-size: .95rem;
+  text-align: left;   /* switch to left if you prefer */
+}
+@media print {
+  .footer-note { color: #000; }  /* slightly darker for print */
+}
+</style>
+
+<!-- Logo directly under title/subtitle -->
+<div class="header-brand">
+  <a href="https://www.humanities.manchester.ac.uk/criminology/" target="_blank" rel="noopener">
+    <img src="logo.png" alt="University of Manchester — Department of Criminology" style="height:32px;">
+  </a>
+</div>
+
+<div class="filter-toolbar" role="toolbar" aria-label="Programme filter and actions">
+  <button class="btn-filter" data-view="both" aria-pressed="true">Show Both</button>
+  <button class="btn-filter" data-view="cafe" aria-pressed="false">Crim Café only</button>
+  <button class="btn-filter" data-view="external" aria-pressed="false">External Speakers only</button>
+  <span class="spacer"></span>
+  <button class="btn-action" id="copy-link" title="Copy link to this view">Copy link</button>
+  <button class="btn-action" id="print-page" title="Print or Save as PDF">Print</button>
+</div>
+
+<div class="grid-two" id="programmes">
+<section class="series-section" data-series="cafe" aria-live="polite">
+  <h2 class="series-heading">Criminology Café Seminar Series <span class="badge">Café</span></h2>
+
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">8 October 2025</div>
+      <div class="prog-time">3:30–4:30pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Prof Dave Gadd &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
+    <ul class="prog-list">
+      <li><strong>Talk 1:</strong> Rebecca Cargill — <em>title TBC</em></li>
+      <li><strong>Talk 2:</strong> Isobel Johnston — <em>Challenges in Determining the Effectiveness of Intimate Partner Violence Perpetrator Programmes: The ADVANCE-D Trial</em></li>
+    </ul>
+  </div>
+
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">19 November 2025</div>
+      <div class="prog-time">2:30–3:30pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Laura Bui &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
+    <ul class="prog-list">
+      <li><strong>Talk 1:</strong> Brogan Pritchard — <em>Reproductive Health, Embodiment, and Creative Criminology: Using Body-Mapping to Explore Menstrual Experiences in Women’s Prisons</em></li>
+      <li><strong>Talk 2:</strong> Dr Emily Turner — <em>Taking a knowledge-equity approach in prison research: Theoretical and practical strengths and challenges </em></li>
+    </ul>
+  </div>
+  
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">3 December 2025</div>
+      <div class="prog-time">2:30–3:30pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Laura Bui &nbsp;•&nbsp; <strong>Room:</strong> University Place 6.208</div>
+    <ul class="prog-list">
+      <li><strong>Talk 1:</strong> Clara Paul — <em>Understanding children's perspectives and experiences of "child criminal exploitation": reframing the debate</em></li>
+      <li><strong>Talk 2:</strong> Michelle Corallo — <em>Walking the division line: Reflections on mobile methodologies in post-conflict societies</em></li>
+    </ul>
+  </div>
+  
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">11 February 2026</div>
+      <div class="prog-time">2:30–3:30pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Laura Bui &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
+    <ul class="prog-list">
+      <li><strong>Talk 1:</strong> Selahattin Gunay — <em>Network models of Psychopathy: A systematic review</em></li>
+      <li><strong>Talk 2:</strong> Dr Olga Sánchez de Ribera — <em>title TBC</em></li>
+    </ul>
+  </div>
+    
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">25 March 2026</div>
+      <div class="prog-time">2:30–3:30pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Laura Bui &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
+    <ul class="prog-list">
+      <li><strong>Talk 1:</strong> Yijie He — <em>Why Do some Businesses Suffer Again? Boost and Flag Explanations of Repeat and Multiple Victimization over Time</em></li>
+      <li><strong>Talk 2:</strong> Dr Niels Blom — <em>Welfare policies and intimate partner violence: the case of Universal Credit in England and Wales</em></li>
+    </ul>   
+  </div>    
+
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">13 May 2026</div>
+      <div class="prog-time">3:30–4:30pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Laura Bui &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
+    <ul class="prog-list">
+      <li><strong>Talk 1:</strong> Meg Ryan — <em>Researching an (in)visible problem: An insight into the challenges faced in exploring an emergent form of Image-Based Sexual Abuse</em></li>
+      <li><strong>Talk 2:</strong> Ashleigh Burnside — <em>title TBC</em></li>
+    </ul>
+  </div>
+</section>
+
+<section class="series-section" data-series="external" aria-live="polite">
+  <h2 class="series-heading">External Speaker Seminar Series <span class="badge">External</span></h2>
+
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">22 October 2025</div>
+      <div class="prog-time">4:00–5:00pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Lisa Williams &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.07</div>
+    <ul class="prog-list">
+      <li>
+      <strong>Talk:</strong>
+      <a href="https://www.unsw.edu.au/staff/isabelle-volpe" target="_blank" rel="noopener noreferrer" class="speaker-link">
+        Isabelle Volpe
+      </a>
+      <em>(University of South Wales, Australia)</em> — “<em>Redrawing drug policy participation: Inventive method as ontopolitical intervention</em>”
+    </li>
+    </ul>
+  </div>
+
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">26 November 2025</div>
+      <div class="prog-time">4:00–5:00pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr David Buil-Gil &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.07</div>
+    <ul class="prog-list">
+      <li>
+      <strong>Talk:</strong>
+      <a href="https://www.uma.es/departments/teachers/b2pPS2ZpSm1ZdjRneEFxU000Uk5IZz09/?set_language=en" target="_blank" rel="noopener noreferrer" class="speaker-link">
+        Dr Diego Maldonado
+      </a>
+      <em>(University of Malaga, Spain)</em> — “<em>Does the past always come back? Application of the Hawkes process to the study of the copy-cat effect in femicides</em>”
+    </li>
+    </ul>
+  </div>
+  
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">25 February 2026</div>
+      <div class="prog-time">4:00–5:00pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Thiago R. Oliveira &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.07</div>
+    <ul class="prog-list">
+      <li>
+      <strong>Talk:</strong>
+      <a href="https://www.lse.ac.uk/methodology/people/academic-staff/jonathan-jackson/jonathan-jackson" target="_blank" rel="noopener noreferrer" class="speaker-link">
+        Prof Jonathan Jackson
+      </a>
+      <em>(London School of Economics and Political Science, UK)</em> — “<em>title TBC</em>”
+    </li>
+    </ul>
+  </div>
+  
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">11 March 2026</div>
+      <div class="prog-time">4:00–5:00pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Reka Solymosi &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.07</div>
+    <ul class="prog-list">
+       <li>
+      <strong>Talk:</strong>
+      <a href="https://sociology.uwo.ca/people/profiles/Huey.html" target="_blank" rel="noopener noreferrer" class="speaker-link">
+        Prof Laura Huey
+      </a>
+      <em>(Western University, Canada)</em> — “<em>title TBC</em>”
+    </li>
+    </ul>
+  </div>
+  
+<div class="prog-card">
+  <div class="prog-meta">
+    <div class="prog-date">6 May 2026</div>
+    <div class="prog-time">4:00–5:00pm</div>
+  </div>
+  <div class="prog-submeta"><strong>Chair:</strong> Dr Nico Trajtenberg &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.07</div>
+  <ul class="prog-list">
+    <li>
+      <strong>Talk:</strong>
+      <a href="https://www.crim.cam.ac.uk/People/professor-manuel-eisner" target="_blank" rel="noopener noreferrer" class="speaker-link">
+        Prof Manuel Eisner
+      </a>
+      <em>(University of Cambridge, UK)</em> — “<em>Blood on the Streets: The Spatial Politics of Homicide in the Medieval City</em>”
+    </li>
+  </ul>
+</div>
+
+  <div class="prog-card">
+    <div class="prog-meta">
+      <div class="prog-date">3 June 2026</div>
+      <div class="prog-time">4:00–5:00pm</div>
+    </div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Marion Vannier &nbsp;•&nbsp; <strong>Room:</strong> TBC</div>
+    <ul class="prog-list">
+      <li>
+      <strong>Talk:</strong>
+      <a href="https://www.chester.ac.uk/staff-directory/gbuck/" target="_blank" rel="noopener noreferrer" class="speaker-link">
+        Dr Gill Buck
+      </a>
+      <em>(Chester University, UK)</em> — “<em>Before It Was ‘New’: A Neglected History of Lived Experience in Criminal Justice</em>”
+    </li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<script>
+(function(){
+  const sections = Array.from(document.querySelectorAll('.series-section'));
+  const btns = Array.from(document.querySelectorAll('.btn-filter'));
+  const copyBtn = document.getElementById('copy-link');
+  const printBtn = document.getElementById('print-page');
+
+  function applyView(view){
+    sections.forEach(sec => {
+      const s = sec.getAttribute('data-series');
+      if (view === 'both' || view === s) {
+        sec.style.display = '';
+      } else {
+        sec.style.display = 'none';
+      }
+    });
+    btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.view === view ? 'true' : 'false'));
+    // update hash so the view is shareable
+    history.replaceState(null, '', '#' + view);
+  }
+
+  // Read initial view from hash, default to 'both'
+  const initial = (location.hash || '#both').replace('#','');
+  applyView(['cafe', 'external', 'both'].includes(initial) ? initial : 'both');
+
+  // Button handlers
+  btns.forEach(b => b.addEventListener('click', () => applyView(b.dataset.view)));
+
+  copyBtn?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(location.href);
+      copyBtn.textContent = 'Link copied!';
+      setTimeout(() => copyBtn.textContent = 'Copy link', 1600);
+    } catch(e) {
+      alert('Link: ' + location.href);
+    }
+  });
+
+  printBtn?.addEventListener('click', () => {
+    // Ensure both are visible before printing
+    const current = (location.hash || '#both').replace('#','');
+    applyView('both');
+    window.print();
+    // restore after a tick
+    setTimeout(() => applyView(current), 0);
+  });
+
+  // Also allow hash navigation (e.g., someone edits the URL)
+  window.addEventListener('hashchange', () => {
+    const v = (location.hash || '#both').replace('#','');
+    applyView(['cafe','external','both'].includes(v) ? v : 'both');
+  });
+})();
+</script>
+
+<div class="footer-note">
+  Organised by Drs David Buil-Gil, Laura Bui and Caroline Miles.
+  Contact: <a href="mailto:david.builgil@manchester.ac.uk">david.builgil@manchester.ac.uk</a>
+</div>
+```

@@ -1,0 +1,68 @@
+% ========== header.tex (portable, mdframed version) ==========
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+% Prefer TeX Gyre, but fall back to Latin Modern which ships with most TeX installs
+\IfFontExistsTF{TeX Gyre Pagella}{%
+  \setmainfont{TeX Gyre Pagella}%
+}{%
+  \setmainfont{Latin Modern Roman}%
+}
+\IfFontExistsTF{TeX Gyre Heros}{%
+  \setsansfont{TeX Gyre Heros}%
+}{%
+  \setsansfont{Latin Modern Sans}%
+}
+
+% Keep it language-agnostic to avoid missing ldf files
+% (We can switch to polyglossia/babel later if needed.)
+
+\usepackage{microtype}  % improves justification and provides \textls
+\usepackage{enumitem}
+\setlist[itemize]{left=1.2em, itemsep=0.2em, topsep=0.2em}
+\usepackage[svgnames]{xcolor}
+\definecolor{Accent}{HTML}{3742FA} % change to brand colour if desired
+
+% --- Card boxes with a left accent using mdframed (no TikZ required) ---
+\usepackage{mdframed}
+\newmdenv[
+  backgroundcolor=white,
+  linecolor=Accent,
+  linewidth=3pt,
+  leftline=true,
+  rightline=false,
+  topline=false,
+  bottomline=false,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  skipabove=8pt,
+  skipbelow=10pt,
+  roundcorner=2mm,
+  framemethod=default
+]{eventbox}
+
+% Small-caps-like sans label with light letterspacing
+\newcommand{\labelsc}[1]{\textsf{\textls[100]{\MakeUppercase{#1}}}}
+
+% One tidy “event card”
+% Args: 1=date, 2=time, 3=chair, 4=room, 5=items (\item ... \item ...)
+\newcommand{\eventcard}[5]{%
+  \begin{eventbox}
+    {\large \textbf{#1}} \hfill {\large #2}\\[-0.1em]
+    \small \labelsc{Chair}: #3 \quad\textbullet\quad \labelsc{Room}: #4
+    \vspace{0.3em}\par
+    \begin{itemize}
+      #5
+    \end{itemize}
+  \end{eventbox}
+}
+
+% Section styling (un-numbered)
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries\sffamily}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{6pt}{6pt}
