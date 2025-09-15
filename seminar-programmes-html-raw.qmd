@@ -13,7 +13,7 @@ format:
     toc: false
     number-sections: false
     smooth-scroll: true
-    embed-resources: true   # single-file HTML for easy sharing
+    embed-resources: true   
 page-layout: full
 ---
 
@@ -141,10 +141,10 @@ page-layout: full
   border-top: 1px solid var(--card-border);
   color: var(--muted);
   font-size: .95rem;
-  text-align: left;   /* switch to left if you prefer */
+  text-align: left;   
 }
 @media print {
-  .footer-note { color: #000; }  /* slightly darker for print */
+  .footer-note { color: #000; }  
 }
 </style>
 
@@ -175,7 +175,7 @@ page-layout: full
     </div>
     <div class="prog-submeta"><strong>Chair:</strong> Prof Dave Gadd &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
     <ul class="prog-list">
-      <li><strong>Talk 1:</strong> Rebecca Cargill — <em>title TBC</em></li>
+      <li><strong>Talk 1:</strong> Rebecca Cargill — <em>Mind the Gap: Can the Needs of Victim/Survivors of Stalking be Reconciled with Effective Interventions for Perpetrators?</em></li>
       <li><strong>Talk 2:</strong> Isobel Johnston — <em>Challenges in Determining the Effectiveness of Intimate Partner Violence Perpetrator Programmes: The ADVANCE-D Trial</em></li>
     </ul>
   </div>
