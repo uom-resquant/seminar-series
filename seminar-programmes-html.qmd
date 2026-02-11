@@ -209,7 +209,7 @@ page-layout: full
       <div class="prog-date">11 February 2026</div>
       <div class="prog-time">2:30–3:30pm</div>
     </div>
-    <div class="prog-submeta"><strong>Chair:</strong> Dr Laura Bui &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
+    <div class="prog-submeta"><strong>Chair:</strong> Dr Lisa Williams &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
     <ul class="prog-list">
       <li><strong>Talk 1:</strong> Selahattin Gunay — <em>Network models of Psychopathy: A systematic review</em></li>
       <li><strong>Talk 2:</strong> Dr Olga Sánchez de Ribera — <em>Neuropsychological deficits in psychopathy, antisocial personality disorder: A systematic review and meta-analysis</em></li>
@@ -236,7 +236,7 @@ page-layout: full
     <div class="prog-submeta"><strong>Chair:</strong> Dr Laura Bui &nbsp;•&nbsp; <strong>Room:</strong> Williamson Building 4.08</div>
     <ul class="prog-list">
       <li><strong>Talk 1:</strong> Meg Ryan — <em>Researching an (in)visible problem: An insight into the challenges faced in exploring an emergent form of Image-Based Sexual Abuse</em></li>
-      <li><strong>Talk 2:</strong> Ashleigh Burnside — <em>title TBC</em></li>
+      <li><strong>Talk 2:</strong> Ashleigh Burnside — <em>Profiling Behavioural Signals in Online Investment Scam Infrastructure</em></li>
     </ul>
   </div>
 </section>
